@@ -1,4 +1,4 @@
-release_repo_url: git@github.com:ros2-gbp/image_transport_plugins-release.git
+release_repo_url: git@github.com:rockos-riscv-ros/image_transport_plugins-release
 tracks:
   crystal:
     actions:
