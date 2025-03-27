@@ -1,0 +1,305 @@
+ros-jazzy-compressed-depth-image-transport (4.0.4-2noble) noble; urgency=high
+
+
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sun, 09 Feb 2025 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (4.0.3-2noble) noble; urgency=high
+
+
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sun, 24 Nov 2024 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (4.0.2-2noble) noble; urgency=high
+
+  * Added common linters to compressed depth image transport (#168 <https://github.com/ros-perception/image_transport_plugins/issues/168>)
+  * Contributors: Alejandro Hernández Cordero
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Tue, 30 Jul 2024 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (4.0.1-2noble) noble; urgency=high
+
+  * Removed warning (#164 <https://github.com/ros-perception/image_transport_plugins/issues/164>)
+  * Contributors: Alejandro Hernández Cordero
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sun, 21 Jul 2024 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (4.0.0-2noble) noble; urgency=high
+
+  * Added RVL Codec support to compressed_depth_image_transport (#159 <https://github.com/ros-perception/image_transport_plugins/issues/159>)
+  * Contributors: Kenji Brameld, anilsripadarao, ijnek
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Fri, 12 Apr 2024 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (3.2.0-2noble) noble; urgency=high
+
+  * Deprecated the following parameter names in favor of transport scoped ones. The remapping is listed below:
+    * image.png_level to image.compressedDepth.png_level
+    * image.depth_max to image.compressedDepth.depth_max
+    * image.quality to image.compressedDepth.depth_quantization
+    The deprecated parameters emit a warning if explicitly set, but this warning will be removed in future distros.
+    (#145 <https://github.com/ros-perception/image_transport_plugins/issues/145>)
+  * Contributors: Bartosz Meglicki, Kenji Brameld, Marcel Zeilinger
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sun, 07 May 2023 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (3.0.0-2noble) noble; urgency=high
+
+  * Replace deprecated cv_bridge.h with cv_bridge.hpp (#118 <https://github.com/ros-perception/image_transport_plugins/issues/118>)
+  * Update maintainer (#112 <https://github.com/ros-perception/image_transport_plugins/issues/112>)
+  * Contributors: Kenji Brameld
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Mon, 17 Apr 2023 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (2.6.0-2noble) noble; urgency=high
+
+  * Fix advertiseImpl() in compressed_depth_publisher and subscribeImpl() in compressed_depth_subscriber. (#106 <https://github.com/ros-perception/image_transport_plugins/issues/106>)
+  * Contributors: Ivan Santiago Paunovic
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Mon, 15 Aug 2022 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (2.5.0-2noble) noble; urgency=high
+
+
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sun, 17 Apr 2022 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (2.3.2-2noble) noble; urgency=high
+
+  * Fix copyright year 20012 -> 2012 (#79 <https://github.com/ros-perception/image_transport_plugins/issues/79>)
+  * JPEG only supports 8 bits images (#73 <https://github.com/ros-perception/image_transport_plugins/issues/73>)
+  * Contributors: Ivan Santiago Paunovic, Michael Carroll
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Thu, 17 Feb 2022 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (2.3.1-2noble) noble; urgency=high
+
+
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Mon, 12 Jul 2021 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (2.3.0-2noble) noble; urgency=high
+
+  * Use non-deprecated image_transport headers (#59 <https://github.com/ros-perception/image_transport_plugins/issues/59>)
+  * Contributors: Michael Carroll
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Wed, 27 May 2020 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (2.2.1-2noble) noble; urgency=high
+
+
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Tue, 22 Oct 2019 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (2.2.0-2noble) noble; urgency=high
+
+
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Thu, 26 Sep 2019 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (2.1.0-2noble) noble; urgency=high
+
+  * Merge pull request #33 <https://github.com/ros-perception/image_transport_plugins/issues/33> from klintan/ros2
+    [ROS2] Fixed portability warning for compressed depth plugin.
+  * fixed portability warning for name
+  * Contributors: Andreas Klintberg, David Gossow
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Thu, 22 Aug 2019 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (2.0.0-2noble) noble; urgency=high
+
+  * Pointer api updates (#31 <https://github.com/ros-perception/image_transport_plugins/issues/31>)
+  * Bring ros2-devel back into ros2 mainline. (#29 <https://github.com/ros-perception/image_transport_plugins/issues/29>)
+  * Update compressed_image_transport to ros2 (#26 <https://github.com/ros-perception/image_transport_plugins/issues/26>)
+  * Contributors: Michael Carroll, Jose Luis Rivero
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Wed, 12 Dec 2018 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.9.5-2noble) noble; urgency=high
+
+  * disable -Werr
+  * Contributors: Vincent Rabaud
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sun, 02 Oct 2016 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.9.4-2noble) noble; urgency=high
+
+  * address gcc6 build error and tune
+    With gcc6, compiling fails with stdlib.h: No such file or directory,
+    as including '-isystem /usr/include' breaks with gcc6, cf.,
+    https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70129.
+    This commit addresses this issue for this package in the same way
+    it was addressed in various other ROS packages. A list of related
+    commits and pull requests is at:
+    https://github.com/ros/rosdistro/issues/12783
+    Signed-off-by: Lukas Bulwahn <mailto:lukas.bulwahn@oss.bmw-carit.de>
+  * Fix a missing return statement and add -Wall -Werror.
+  * Contributors: Lukas Bulwahn, Mac Mason
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sat, 01 Oct 2016 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.9.3-2noble) noble; urgency=high
+
+  * Refactor the codec into its own .h and .cpp.
+  * remove useless tf dependencies
+  * Contributors: Mac Mason, Vincent Rabaud
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sat, 16 Jan 2016 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.9.2-2noble) noble; urgency=high
+
+  * use compression parameters for both depths
+    fixes #12 <https://github.com/ros-perception/image_transport_plugins/issues/12>
+  * get code to compile with OpenCV3
+  * Contributors: Vincent Rabaud
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Fri, 24 Apr 2015 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.9.1-2noble) noble; urgency=high
+
+
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Thu, 17 Jul 2014 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.9.0-2noble) noble; urgency=high
+
+
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Thu, 15 May 2014 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.21-2noble) noble; urgency=high
+
+  * maintainer: david gossow
+  * Contributors: David Gossow
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Wed, 26 Jun 2013 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.20-2noble) noble; urgency=high
+
+  * 1.8.19 -> 1.8.20
+  * Contributors: Julius Kammerl
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sun, 17 Mar 2013 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.19-2noble) noble; urgency=high
+
+  * 1.8.18 -> 1.8.19
+  * Contributors: Julius Kammerl
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sat, 23 Feb 2013 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.18-2noble) noble; urgency=high
+
+  * 1.8.17 -> 1.8.18
+  * fixing input format checks (enabling rgba, bgra) + minor fixes
+  * Contributors: Julius Kammerl
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Thu, 07 Feb 2013 09:59:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.17-2noble) noble; urgency=high
+
+  * 1.8.16 -> 1.8.17
+  * Contributors: Julius Kammerl
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Thu, 17 Jan 2013 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.16-2noble) noble; urgency=high
+
+  * 1.8.15 -> 1.8.16
+  * use the pluginlib script to remove some runtime warnings
+  * Contributors: Julius Kammerl, Vincent Rabaud
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Wed, 16 Jan 2013 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.15-2noble) noble; urgency=high
+
+
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Fri, 28 Dec 2012 12:11:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.14-2noble) noble; urgency=high
+
+
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Fri, 28 Dec 2012 12:02:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.13-2noble) noble; urgency=high
+
+  * fix the bad exports
+  * make sure the plugins are visible by image_transport
+  * added license headers to various cpp and h files
+  * Contributors: Aaron Blasdel, Vincent Rabaud
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Fri, 28 Dec 2012 11:06:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.12-2noble) noble; urgency=high
+
+  * fix downstream stuff in cmake
+  * Contributors: Dirk Thomas
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Wed, 19 Dec 2012 11:30:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.11-2noble) noble; urgency=high
+
+  * fix cmake order
+  * Contributors: Dirk Thomas
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Wed, 19 Dec 2012 09:17:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.10-2noble) noble; urgency=high
+
+  * fix dyn reconf
+  * Contributors: Dirk Thomas
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Wed, 19 Dec 2012 09:03:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.9-2noble) noble; urgency=high
+
+  * switching to verion 1.8.9
+  * Contributors: Julius Kammerl
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Tue, 18 Dec 2012 16:26:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.8-2noble) noble; urgency=high
+
+  * adding build_deb on message_generation & mrun_deb on message_runtime
+  * Updated package.xml for new buildtool_depend tag for catkin requirement
+  * Contributors: Julius Kammerl, mirzashah
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sun, 16 Dec 2012 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.7-2noble) noble; urgency=high
+
+  * adding missing tf build dependency
+  * Contributors: Julius Kammerl
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Mon, 10 Dec 2012 07:29:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.6-2noble) noble; urgency=high
+
+  * switching to version 1.8.6
+  * Contributors: Julius Kammerl
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Mon, 10 Dec 2012 07:08:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.5-2noble) noble; urgency=high
+
+  * adding missing build debs
+  * added class_loader_hide_library_symbols macros to CMakeList
+  * switching to 1.8.5
+  * Contributors: Julius Kammerl
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Sat, 08 Dec 2012 16:00:00 -0000
+
+ros-jazzy-compressed-depth-image-transport (1.8.4-2noble) noble; urgency=high
+
+  * switching to version 1.8.4
+  * adding plugin.xml exports for pluginlib
+  * catkinizing theora_image_transport
+  * catkinizing compressed_depth_image_transport
+  * github migration from code.ros.org (r40053)
+  * Contributors: Julius Kammerl
+
+ -- Kenji Brameld <kenjibrameld@gmail.com>  Thu, 29 Nov 2012 16:00:00 -0000
+
+
