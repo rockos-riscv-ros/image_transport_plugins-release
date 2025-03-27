@@ -27,13 +27,34 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-#ifndef THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
-#define THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
 
-#warning \
-  This header is obsolete, please include \
-  theora_image_transport/theora_publisher.hpp instead
+#ifndef COMPRESSED_IMAGE_TRANSPORT__COMPRESSION_COMMON_HPP_
+#define COMPRESSED_IMAGE_TRANSPORT__COMPRESSION_COMMON_HPP_
 
-#include <theora_image_transport/theora_publisher.hpp>
+#include <rclcpp/parameter_value.hpp>
+#include <rcl_interfaces/msg/parameter_descriptor.hpp>
 
-#endif  // THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
+namespace compressed_image_transport
+{
+
+// Compression formats
+enum compressionFormat
+{
+  UNDEFINED = -1,
+  JPEG = 0,
+  PNG = 1,
+  TIFF = 2,
+};
+
+using ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor;
+using ParameterValue = rclcpp::ParameterValue;
+
+struct ParameterDefinition
+{
+  const ParameterValue defaultValue;
+  const ParameterDescriptor descriptor;
+};
+
+}  // namespace compressed_image_transport
+
+#endif  // COMPRESSED_IMAGE_TRANSPORT__COMPRESSION_COMMON_HPP_

@@ -27,13 +27,13 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-#ifndef THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
-#define THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
+#ifndef THEORA_IMAGE_TRANSPORT__COMPRESSION_COMMON_H_
+#define THEORA_IMAGE_TRANSPORT__COMPRESSION_COMMON_H_
 
 #warning \
   This header is obsolete, please include \
-  theora_image_transport/theora_publisher.hpp instead
+  theora_image_transport/compression_common.hpp instead
 
-#include <theora_image_transport/theora_publisher.hpp>
+#include <theora_image_transport/compression_common.hpp>
 
-#endif  // THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
+#endif  // THEORA_IMAGE_TRANSPORT__COMPRESSION_COMMON_H_

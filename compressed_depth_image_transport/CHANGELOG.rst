@@ -2,18 +2,47 @@
 Changelog for package compressed_depth_image_transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.5.3 (2025-02-10)
+4.0.4 (2025-02-10)
 ------------------
 
-2.5.2 (2024-07-22)
+4.0.3 (2024-11-25)
 ------------------
-* Update config param to use correct config value. Use default png level of 3. (`#165 <https://github.com/ros-perception/image_transport_plugins/issues/165>`_)
-* Contributors: Jonathan Selling
 
-2.5.1 (2024-04-13)
+4.0.2 (2024-07-31)
 ------------------
+* Added common linters to compressed depth image transport (`#168 <https://github.com/ros-perception/image_transport_plugins/issues/168>`_)
+* Contributors: Alejandro Hernández Cordero
+
+4.0.1 (2024-07-22)
+------------------
+* Removed warning (`#164 <https://github.com/ros-perception/image_transport_plugins/issues/164>`_)
+* Contributors: Alejandro Hernández Cordero
+
+4.0.0 (2024-04-13)
+------------------
+* Added RVL Codec support to compressed_depth_image_transport (`#159 <https://github.com/ros-perception/image_transport_plugins/issues/159>`_)
+* Contributors: Kenji Brameld, anilsripadarao, ijnek
+
+3.2.0 (2023-05-08)
+------------------
+* Deprecated the following parameter names in favor of transport scoped ones. The remapping is listed below:
+  * `image.png_level` to `image.compressedDepth.png_level`
+  * `image.depth_max` to `image.compressedDepth.depth_max`
+  * `image.quality` to `image.compressedDepth.depth_quantization`
+  The deprecated parameters emit a warning if explicitly set, but this warning will be removed in future distros.
+  (`#145 <https://github.com/ros-perception/image_transport_plugins/issues/145>`_)
+* Contributors: Bartosz Meglicki, Kenji Brameld, Marcel Zeilinger
+
+3.0.0 (2023-04-18)
+------------------
+* Replace deprecated cv_bridge.h with cv_bridge.hpp (`#118 <https://github.com/ros-perception/image_transport_plugins/issues/118>`_)
 * Update maintainer (`#112 <https://github.com/ros-perception/image_transport_plugins/issues/112>`_)
 * Contributors: Kenji Brameld
+
+2.6.0 (2022-08-16)
+------------------
+* Fix advertiseImpl() in compressed_depth_publisher and subscribeImpl() in compressed_depth_subscriber. (`#106 <https://github.com/ros-perception/image_transport_plugins/issues/106>`_)
+* Contributors: Ivan Santiago Paunovic
 
 2.5.0 (2022-04-18)
 ------------------

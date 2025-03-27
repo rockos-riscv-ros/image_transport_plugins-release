@@ -27,13 +27,40 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-#ifndef THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
-#define THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
+#ifndef COMPRESSED_DEPTH_IMAGE_TRANSPORT__COMPRESSION_COMMON_HPP_
+#define COMPRESSED_DEPTH_IMAGE_TRANSPORT__COMPRESSION_COMMON_HPP_
 
-#warning \
-  This header is obsolete, please include \
-  theora_image_transport/theora_publisher.hpp instead
+#include <rclcpp/parameter_value.hpp>
+#include <rcl_interfaces/msg/parameter_descriptor.hpp>
 
-#include <theora_image_transport/theora_publisher.hpp>
+namespace compressed_depth_image_transport
+{
 
-#endif  // THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
+// Compression formats
+enum compressionFormat
+{
+  UNDEFINED = -1,
+  INV_DEPTH
+};
+
+// Compression configuration
+struct ConfigHeader
+{
+  // compression format
+  compressionFormat format;
+  // quantization parameters (used in depth image compression)
+  float depthParam[2];
+};
+
+using ParameterDescriptor = rcl_interfaces::msg::ParameterDescriptor;
+using ParameterValue = rclcpp::ParameterValue;
+
+struct ParameterDefinition
+{
+  const ParameterValue defaultValue;
+  const ParameterDescriptor descriptor;
+};
+
+}  // namespace compressed_depth_image_transport
+
+#endif  // COMPRESSED_DEPTH_IMAGE_TRANSPORT__COMPRESSION_COMMON_HPP_

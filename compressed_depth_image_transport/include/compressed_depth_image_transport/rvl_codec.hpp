@@ -1,4 +1,4 @@
-// Copyright (c) 2012, Willow Garage, Inc.
+// Copyright 2019
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -27,13 +27,41 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-#ifndef THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
-#define THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
+#ifndef COMPRESSED_DEPTH_IMAGE_TRANSPORT__RVL_CODEC_HPP_
+#define COMPRESSED_DEPTH_IMAGE_TRANSPORT__RVL_CODEC_HPP_
 
-#warning \
-  This header is obsolete, please include \
-  theora_image_transport/theora_publisher.hpp instead
+#include <cstdint>
 
-#include <theora_image_transport/theora_publisher.hpp>
+namespace compressed_depth_image_transport
+{
 
-#endif  // THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
+class RvlCodec {
+public:
+  RvlCodec();
+  // Compress input data into output. The size of output can be equal to
+  // (1.5 * numPixels + 4) in the worst case.
+  int CompressRVL(
+    const uint16_t * input, unsigned char * output,
+    int numPixels);
+  // Decompress input data into output. The size of output must be
+  // equal to numPixels.
+  void DecompressRVL(
+    const unsigned char * input, uint16_t * output,
+    int numPixels);
+
+private:
+  RvlCodec(const RvlCodec &);
+  RvlCodec & operator=(const RvlCodec &);
+
+  void EncodeVLE(int value);
+  int DecodeVLE();
+
+  int *buffer_;
+  int *pBuffer_;
+  int word_;
+  int nibblesWritten_;
+};
+
+}  // namespace compressed_depth_image_transport
+
+#endif  // COMPRESSED_DEPTH_IMAGE_TRANSPORT__RVL_CODEC_HPP_

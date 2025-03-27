@@ -1,4 +1,4 @@
-// Copyright (c) 2012, Willow Garage, Inc.
+// Copyright 2019
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -27,13 +27,13 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 // POSSIBILITY OF SUCH DAMAGE.
 
-#ifndef THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
-#define THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
+#ifndef COMPRESSED_DEPTH_IMAGE_TRANSPORT__RVL_CODEC_H_
+#define COMPRESSED_DEPTH_IMAGE_TRANSPORT__RVL_CODEC_H_
 
 #warning \
   This header is obsolete, please include \
-  theora_image_transport/theora_publisher.hpp instead
+  compressed_depth_image_transport/rvl_codec.hpp instead
 
-#include <theora_image_transport/theora_publisher.hpp>
+#include <compressed_depth_image_transport/rvl_codec.hpp>
 
-#endif  // THEORA_IMAGE_TRANSPORT__THEORA_PUBLISHER_H_
+#endif  // COMPRESSED_DEPTH_IMAGE_TRANSPORT__RVL_CODEC_H_

@@ -2,16 +2,54 @@
 Changelog for package compressed_image_transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.5.3 (2025-02-10)
+4.0.4 (2025-02-10)
 ------------------
 
-2.5.2 (2024-07-22)
+4.0.3 (2024-11-25)
+------------------
+* inlcude alpha channel in PNG compression (`#171 <https://github.com/ros-perception/image_transport_plugins/issues/171>`_) (`#173 <https://github.com/ros-perception/image_transport_plugins/issues/173>`_)
+  (cherry picked from commit 9695d1b2a88e3dcae8ab2f28e1078e68a7893af5)
+  Co-authored-by: Aleksander Szymański <bitterisland6@gmail.com>
+* Contributors: mergify[bot]
+
+4.0.2 (2024-07-31)
+------------------
+* Added common linters to compressed_image_transport (`#167 <https://github.com/ros-perception/image_transport_plugins/issues/167>`_)
+* Contributors: Alejandro Hernández Cordero
+
+4.0.1 (2024-07-22)
+------------------
+* Removed warning (`#164 <https://github.com/ros-perception/image_transport_plugins/issues/164>`_)
+* Contributors: Alejandro Hernández Cordero
+
+4.0.0 (2024-04-13)
 ------------------
 
-2.5.1 (2024-04-13)
+3.2.0 (2023-05-08)
 ------------------
+* Allow parameters to be reconfigurable (`#144 <https://github.com/ros-perception/image_transport_plugins/issues/144>`_)
+* Contributors: Bartosz Meglicki, Kenji Brameld
+
+3.0.0 (2023-04-18)
+------------------
+* Deprecated the following parameter names in favor of transport scoped ones. The remapping is listed below:
+  * `image.format` to `image.compressed.format`
+  * `image.png_level` to `image.compressed.png_level`
+  * `image.jpeg_quality` to `image.compressed.jpeg_quality`
+  * `image.tiff.res_unit` to `image.compressed.tiff.res_unit`
+  * `image.tiff.xdpi` to `image.compressed.tiff.xdpi`
+  * `image.tiff.ydpi` to `image.compressed.tiff.ydpi`
+  The deprecated parameters emit a warning if explicitly set, but this warning will be removed in future distros.
+  (`#143 <https://github.com/ros-perception/image_transport_plugins/issues/143>`_)
+* Replace deprecated cv_bridge.h with cv_bridge.hpp (`#118 <https://github.com/ros-perception/image_transport_plugins/issues/118>`_)
 * Update maintainer (`#112 <https://github.com/ros-perception/image_transport_plugins/issues/112>`_)
-* Contributors: Kenji Brameld
+* Compressed image transport parameters are now reconfigurable (`#108 <https://github.com/ros-perception/image_transport_plugins/issues/108>`_)
+* Contributors: Bartosz Meglicki, Ivan Santiago Paunovic, Kenji Brameld
+
+2.6.0 (2022-08-16)
+------------------
+* Fix advertiseImpl() in compressed_publisher and subscribeImpl() in compressed_subscriber. (`#106 <https://github.com/ros-perception/image_transport_plugins/issues/106>`_)
+* Contributors: Ivan Santiago Paunovic
 
 2.5.0 (2022-04-18)
 ------------------
